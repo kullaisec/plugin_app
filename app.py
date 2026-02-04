@@ -8,7 +8,6 @@ def run():
     plugin = request.args.get("plugin")
     action = request.args.get("action")
 
-    # user controls both plugin + action
     return load_plugin(plugin, action)
 
 if __name__ == "__main__":
